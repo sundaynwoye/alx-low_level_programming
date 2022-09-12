@@ -6,25 +6,14 @@
  * You can only use the putchar function
  * Return: 0
  */
-
 int main(void)
-
 {
+	int num;
 
-	int n = 48;
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-	while (n <= 57)
-
-	{
-
-		putchar(n);
-
-		n += 1;
-
-	}
-
-	printf("\n");
+	putchar('\n');
 
 	return (0);
-
 }
